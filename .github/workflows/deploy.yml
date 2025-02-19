@@ -25,4 +25,5 @@ jobs:
         run: npm install -g vercel # Install Vercel command-line tool
 
       - name: Deploy to Vercel
-        run: vercel --prod --token ${{ secrets.TOCKEN }} --yes # Deploy to Vercel
+      run: vercel --prod --token ${{ secrets.tocken }} --yes # Using 'tocken' instead of 'VERCEL_TOKEN'
+
